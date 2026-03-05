@@ -2,62 +2,66 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>ふうみの自己紹介</title>
+<title>ふうみのパンダページ</title>
 
 <style>
 body{
-    background-color:#ffe4f2;
-    font-family:"Arial", sans-serif;
+    background:#e8f8ff;
     text-align:center;
+    font-family:sans-serif;
+    overflow:hidden;
+}
+
+h1{
+    color:#ff6fa8;
+}
+
+.panda{
+    position:absolute;
+    font-size:80px;
+    bottom:50px;
+    left:-100px;
+    animation: movePanda 8s linear infinite;
+}
+
+@keyframes movePanda{
+    0%{
+        left:-100px;
+    }
+    50%{
+        transform: scaleX(1);
+    }
+    51%{
+        transform: scaleX(-1);
+    }
+    100%{
+        left:110%;
+        transform: scaleX(-1);
+    }
 }
 
 .card{
     background:white;
     width:350px;
-    margin:60px auto;
-    padding:25px;
+    margin:80px auto;
+    padding:20px;
     border-radius:20px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
-
-h1{
-    color:#ff66a3;
-}
-
-.name{
-    font-size:22px;
-    color:#ff3399;
-}
-
-.emoji{
-    font-size:30px;
-}
-
 </style>
+
 </head>
 
 <body>
 
 <div class="card">
-
-<div class="emoji">🌸🐰🌸</div>
-
-<h1>自己紹介</h1>
-
-<p class="name">いしだ ふうみ</p>
-
+<h1>🌸ふうみの自己紹介🌸</h1>
+<p><strong>名前：</strong>いしだ ふうみ</p>
 <p>こんにちは！</p>
-<p>ふうみのページへようこそ！</p>
-<p>よろしくおねがいします ✨</p>
-
-<div class="emoji">🍓🎀🍓</div>
-
+<p>パンダが遊びにきました 🐼✨</p>
 </div>
 
-</body>
-</html>
-
-</div>
+<div class="panda">🐼</div>
 
 </body>
 </html>
